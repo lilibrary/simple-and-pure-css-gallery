@@ -11,7 +11,7 @@
 	position: relative;
 }
 
-#li2, #li1, #li3{
+#li1, #li2, #li3, #li4, #li5{
 	display: block;
 	height: 34px;
 	line-height: 34px;
@@ -27,17 +27,25 @@
 	color: #000;
 }
 
-#li2{
-	left: 85px;
-}
-
-#li2, #li3 {
+#li2, #li3, #li4, #li5 {
 	border-bottom: 1px #cccccc solid;
 	color: #b3b3b3;
 }
 
+#li2{
+	left: 85px;
+}
+
 #li3 {
 	left: 172px;
+}
+
+#li4 {
+	left: 257px;
+}
+
+#li5 {
+	left: 342px;
 }
 
 .div1, .div2, .div3, .div4, .div5 {
@@ -48,26 +56,38 @@
 	top: 34px;
 	background-image: url(./images/GitHub-Mark.png);
 	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .div1 {
-	z-index: 50;
-}
-
- .div2 {
-	z-index: 40;
+	z-index: 1;
 }
 
 /*-------------------hover line-------------------*/
 
 /*:hover_border*/
 
-#li2:hover {
+#li2:hover, #li3:hover, #li4:hover, #li5:hover {
 	border: 1px #cccccc solid;
 	border-bottom: none;
 	color: #000;
-	left: 87px;
     width: 85px;
+}
+
+#li2:hover {
+	left: 87px;
+}
+
+#li3:hover {
+	left: 172px;
+}
+
+#li4:hover {
+	left: 257px;
+}
+
+#li5:hover {
+	left: 342px;
 }
 
 #li2:hover ~ #li1, #li3:hover ~ #li1, #li4:hover ~ #li1, #li5:hover ~ #li1 {
@@ -86,6 +106,47 @@
 	color: #b3b3b3;
 }
 
+.div3:hover ~ #li1 {
+	border-bottom: 1px #cccccc solid;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	color: #b3b3b3;
+}
+
+.div4:hover ~ #li1 {
+	border-bottom: 1px #cccccc solid;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	color: #b3b3b3;
+}
+
+.div5:hover ~ #li1 {
+	border-bottom: 1px #cccccc solid;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	color: #b3b3b3;
+}
+
+.div1:hover ~ #li1 {
+	border-bottom: 1px #cccccc solid;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	color: #b3b3b3;
+}
+
+
+/*.div2:hover ~ #li1 {
+	border-bottom: 1px #cccccc solid;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	color: #b3b3b3;
+}
+
 .div2:hover + #li2 {
 	border-left: 1px #cccccc solid;
 	border-right: 1px #cccccc solid;
@@ -93,6 +154,30 @@
 	border-bottom: none;
 	color: #000;
 }
+
+.div3:hover + #li3 {
+	border-left: 1px #cccccc solid;
+	border-right: 1px #cccccc solid;
+	border-top: 1px #cccccc solid;
+	border-bottom: none;
+	color: #000;
+}
+
+.div4:hover + #li4 {
+	border-left: 1px #cccccc solid;
+	border-right: 1px #cccccc solid;
+	border-top: 1px #cccccc solid;
+	border-bottom: none;
+	color: #000;
+}
+
+.div5:hover + #li5 {
+	border-left: 1px #cccccc solid;
+	border-right: 1px #cccccc solid;
+	border-top: 1px #cccccc solid;
+	border-bottom: none;
+	color: #000;
+}*/
 
 /*:hover_background*/
 .div1:hover {
@@ -112,16 +197,44 @@
 }
 
 .div5:hover {
-	background-image: url(./images/walk-3.gif);
+	background-image: url(./images/baracktocat.gif);
 }
 
 /*:hover_z-index section*/
 
-#li2:hover ~ .div1 {
-	z-index: 30;
+#li2:hover ~ .div1, #li3:hover ~ .div1, #li4:hover ~ .div1, #li5:hover ~ .div1 {
+	z-index: 0;
+}
+
+#li2:hover ~ .div2{
+	z-index: 9;
+}
+
+#li3:hover ~ .div3{
+	z-index: 9;
+}
+
+#li4:hover ~ .div4{
+	z-index: 9;
+}
+
+#li5:hover ~ .div5{
+	z-index: 9;
 }
 
 .div2:hover  {
-	z-index: 90;
+	z-index: 9;
+}
+
+.div3:hover  {
+	z-index: 9;
+}
+
+.div4:hover  {
+	z-index: 9;
+}
+
+.div5:hover  {
+	z-index: 9;
 }
 
