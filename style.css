@@ -191,6 +191,10 @@
 	background-image: url(./images/baracktocat.gif);
 }
 
+.div1:hover, .div2:hover, .div3:hover, .div4:hover, .div5:hover {
+	transition: 0.5s cubic-bezier(1, 0.69, 0.45, 1.29);
+}
+
 /*:hover_z-index section*/
 
 #li2:hover ~ .div1, #li3:hover ~ .div1, #li4:hover ~ .div1, #li5:hover ~ .div1 {
