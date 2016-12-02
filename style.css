@@ -45,7 +45,7 @@
 }
 
 #li5 {
-	left: 342px;
+	left: 340px;
 }
 
 .div1, .div2, .div3, .div4, .div5 {
@@ -87,7 +87,7 @@
 }
 
 #li5:hover {
-	left: 342px;
+	left: 340px;
 }
 
 #li2:hover ~ #li1, #li3:hover ~ #li1, #li4:hover ~ #li1, #li5:hover ~ #li1 {
