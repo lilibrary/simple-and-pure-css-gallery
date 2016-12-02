@@ -130,16 +130,7 @@
 	color: #b3b3b3;
 }
 
-.div1:hover ~ #li1 {
-	border-bottom: 1px #cccccc solid;
-	border-top: none;
-	border-left: none;
-	border-right: none;
-	color: #b3b3b3;
-}
-
-
-/*.div2:hover ~ #li1 {
+.div2:hover ~ #li1, .div3:hover ~ #li1, .div4:hover ~ #li1, .div5:hover ~ #li1 {
 	border-bottom: 1px #cccccc solid;
 	border-top: none;
 	border-left: none;
@@ -177,7 +168,7 @@
 	border-top: 1px #cccccc solid;
 	border-bottom: none;
 	color: #000;
-}*/
+}
 
 /*:hover_background*/
 .div1:hover {
@@ -203,7 +194,19 @@
 /*:hover_z-index section*/
 
 #li2:hover ~ .div1, #li3:hover ~ .div1, #li4:hover ~ .div1, #li5:hover ~ .div1 {
-	z-index: 0;
+	display: none;
+}
+
+#li3:hover ~ .div2, #li4:hover ~ .div2, #li5:hover ~ .div2 {
+	display: none;
+}
+
+#li4:hover ~ .div3, #li5:hover ~ .div3 {
+	display: none;
+}
+
+#li5:hover ~ .div4 {
+	display: none;
 }
 
 #li2:hover ~ .div2{
